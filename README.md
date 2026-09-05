@@ -95,7 +95,6 @@ glusterfs-distributed-file-system-lab/
 ├── README.md
 ├── .gitignore
 ├── docs/
-│   ├── DFS_Report.pdf
 │   └── implementation-notes.md
 ├── scripts/
 │   ├── 01-install-glusterfs.sh
@@ -103,8 +102,6 @@ glusterfs-distributed-file-system-lab/
 │   ├── 03-create-replicated-volume.sh
 │   ├── 04-mount-volume.sh
 │   └── 05-test-replication.sh
-└── screenshots/
-    └── README.md
 ```
 
 ## Quick Start
@@ -250,26 +247,5 @@ This lab provides practical experience with:
 - Linux administration
 - Fault-tolerant system design
 
-## Original Report
-
-The full group report used for this project is available here:
-
-```text
-docs/DFS_Report.pdf
-```
-
-## Contributors
-
-- Bernard Godonou
-- Seline Atieno Ochieng
-- Pauline Sindayo
-- Boum Nkot
-
-## Course
-
-**DST 4010 — Fall 2025**  
-United States International University-Africa
-
----
 
 > This repository is intended for academic and learning purposes. Test the setup in a controlled virtual-machine environment before adapting it to production infrastructure.

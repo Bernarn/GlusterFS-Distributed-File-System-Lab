@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# VM artifacts
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.box
+
+# Archives generated locally
+*.zip
+*.tar
+*.tar.gz

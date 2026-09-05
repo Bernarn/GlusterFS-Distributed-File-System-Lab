@@ -41,13 +41,23 @@ GlusterFS was selected because it provides:
 
 ```mermaid
 flowchart LR
-    C[Client / Mount Point] -->|GlusterFS mount| S1[Server 1\nGlusterFS Brick]
-    C -->|GlusterFS mount| S2[Server 2\nGlusterFS Brick]
-    S1 <-->|Replica 2 synchronization| S2
+    C[Client / Mount Point]
 
-    S1 --> B1[/data/brick/gv0]
-    S2 --> B2[/data/brick/gv0]
+    S1["Server 1 - GlusterFS Brick"]
+    S2["Server 2 - GlusterFS Brick"]
+
+    B1["/data/brick/gv0"]
+    B2["/data/brick/gv0"]
+
+    C -->|GlusterFS mount| S1
+    C -->|GlusterFS mount| S2
+
+    S1 <--> |Replica 2 synchronization| S2
+
+    S1 --> B1
+    S2 --> B2
 ```
+
 
 The implementation uses two Ubuntu virtual machines connected through a host-only network. Each server contributes a GlusterFS brick, and both bricks form a replicated volume named `gv0`.
 
